@@ -47,8 +47,9 @@ public class SecurityConfiguration{
             auth.requestMatchers("/login").permitAll()
                     .requestMatchers(HttpMethod.GET, "/teste-api").permitAll()
                     .requestMatchers(HttpMethod.GET, "/teste-api-bem-vindo").hasAuthority(PermissaoEnum.ADMINISTRADOR.toString())
-                    .requestMatchers(HttpMethod.GET, "/usuarios").hasAuthority(PermissaoEnum.ADMINISTRADOR.toString())
-                    .requestMatchers(HttpMethod.GET, "/usuarios").hasAuthority(PermissaoEnum.USUARIO.toString())
+                   //.requestMatchers(HttpMethod.GET, "/usuarios").hasAuthority(PermissaoEnum.ADMINISTRADOR.toString())
+                   // .requestMatchers(HttpMethod.POST, "/usuarios").hasAuthority(PermissaoEnum.USUARIO.toString())
+                  //  .requestMatchers(HttpMethod.POST, "/gerenciador-tarefas").hasAuthority(PermissaoEnum.ADMINISTRADOR.toString())
                     .anyRequest()
                     .authenticated();
                 });

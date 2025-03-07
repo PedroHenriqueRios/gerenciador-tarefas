@@ -17,6 +17,8 @@ import java.util.List;
 @Setter
 public class Role implements Serializable {
 
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
