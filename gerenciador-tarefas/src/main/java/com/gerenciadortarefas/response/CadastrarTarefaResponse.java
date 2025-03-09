@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class CadastrarTarefaResponse {
+public class CadastraCadastrarTarefaResponse {
 
     private Long id;
     private String titulo;
